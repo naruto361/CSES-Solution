@@ -30,3 +30,31 @@ int main()
     cout<<ans;
 }
 ```
+
+## [COIN PILES](https://cses.fi/problemset/task/1754)
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+#define YES cout<<"YES\n";
+#define NO cout<<"NO\n";
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int a,b;
+        cin>>a>>b;
+        if(b>a) swap(a,b);
+
+        if(a==2*b) YES
+        else if(a>2*b) NO
+        else if((a+b) %3==0) YES
+        else NO
+        
+    }
+    return 0;
+}
+```
+
