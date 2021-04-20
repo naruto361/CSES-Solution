@@ -43,16 +43,16 @@ int main()
 {
     ios_base::sync_with_stdio(false);
 	cin.tie(NULL); cout.tie(NULL);
-    int n,x;
+    ll n,x;
     cin>>n>>x;
     int a[n];
     loop1(n) cin>>a[i];
-    ll sum=0;int ans=0;
+    ll sum=0,ans=0;
     map<ll,ll> mp;
     loop1(n)
     {
         sum+=a[i];
-        if(a[i]==x) ans++;
+        if(sum==x) ans++;
         if(mp.count(sum-x)) ans+=mp[sum-x];
         mp[sum]++;
     }
