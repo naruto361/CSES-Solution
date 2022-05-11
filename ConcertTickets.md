@@ -41,6 +41,26 @@ int main()
 {
     ios_base::sync_with_stdio(false);
 	cin.tie(NULL); cout.tie(NULL);
+	
+	
+<!-- 	int m,n;cin>>m>>n;
+        multiset<int> ms;
+        loop1(m) {int x;cin>>x;ms.insert(x);}
+        loop1(n)
+        {
+            int x;cin>>x;
+            auto it=ms.upper_bound(x);
+            if(it==ms.begin()) cout<<-1;
+            else
+            {
+                --it;
+                cout<<*it;
+                ms.erase(it);
+            }
+            nl
+        } -->
+	
+	
         int n,m;
         cin>>n>>m;
         multiset<int,greater<int>> s;
